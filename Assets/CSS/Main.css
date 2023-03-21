@@ -1,0 +1,43 @@
+	/* Text strength */
+.btn-text-stretch {
+	box-sizing: inherit;
+	transition-property: all;
+	transition-duration: .6s;
+	transition-timing-function: ease;
+	cursor: pointer;
+}
+.btn-text-stretch:hover, .btn-text-stretch:active {
+	letter-spacing: 5px;
+}
+.btn-text-stretch:after, .btn-text-stretch:before {
+	backface-visibility: hidden;
+	bottom: 0px;
+	content: " ";
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	transition: all 400ms ease-in-out;
+	width: 0;
+}
+.btn-text-stretch:hover:after, .btn-text-stretch:hover:before {
+	backface-visibility: hidden;
+	transition: width 500ms ease-in-out;
+	width: 70%;
+}
+.btn-text-stretch:hover:before {
+	bottom: auto;
+	top: 0;
+	width: 70%;
+}
+.btn-text-stretch--gray{
+	color:#333 
+}
+.btn-text-stretch--gray:hover:after, .btn-text-stretch--gray:hover:before {
+	border-color: #333;
+}
+.btn-text-stretch--red {
+	color:#EF233C;
+}
+.btn-text-stretch--red:hover:after, .btn-text-stretch--red:hover:before {
+	border-color: #EF233C;
+}
